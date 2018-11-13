@@ -7,6 +7,6 @@ deploy_production:
   script:
     - bash .gitlab-deploy.sh
     - cp .env.production .env
-    - eb deploy production
+    - eb deploy aws-app-env
   only:
     - master
