@@ -1,0 +1,4 @@
+global:
+  application_name: awsAppName
+  default_region: eu-west-3
+  profile: eb-cli
