@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+deploy_production:
+  type: deploy
+  environment: production
+  script:
+    - bash .gitlab-deploy.sh
+    - cp .env.production .env
+    - eb deploy production
+  only:
+    - master
